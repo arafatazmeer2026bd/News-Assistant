@@ -1,0 +1,10 @@
+{
+  "name": "ব্যক্তিগত সংবাদ প্রতিবেদন সহকারী",
+  "description": "সাংবাদিক, সংবাদ পাঠক এবং স্টাফ রিপোর্টারদের জন্য একটি আধুনিক সংবাদ প্রতিবেদন সিস্টেম। এটি ঘটনার তথ্য থেকে প্রতিবেদন তৈরি এবং ইন্টারনেট ও সোশ্যাল মিডিয়া থেকে সত্য খবর সংগ্রহ করতে সক্ষম।",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "AI News Generation",
+    "Multi-role reporting",
+    "Bengali Language Support"
+  ]
+}

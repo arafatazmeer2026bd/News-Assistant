@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Hind Siliguri", "Noto Sans Bengali", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-[#F4F7F9] text-[#1F2937] antialiased;
+    font-feature-settings: "kern" 1;
+  }
+}
+
+.news-card {
+  @apply bg-white border border-[#E2E8F0] rounded-2xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] overflow-hidden;
+}
+
+.input-field {
+  @apply w-full px-4 py-3 bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl focus:bg-white focus:border-[#3B82F6] focus:ring-4 focus:ring-[#3B82F6]/10 transition-all outline-none text-base;
+}
+
+.btn-primary {
+  @apply px-6 py-3.5 bg-[#0F172A] text-white rounded-xl font-semibold hover:bg-black active:scale-[0.98] transition-all disabled:opacity-50 disabled:pointer-events-none shadow-lg shadow-black/10;
+}
+
+.markdown-body {
+  @apply text-[1.1rem] leading-[1.8] text-[#334155];
+}
+
+.markdown-body h1 { 
+  @apply text-3xl font-bold mb-6 text-[#0F172A] border-b-2 border-[#F1F5F9] pb-4 leading-tight; 
+}
+
+.markdown-body h2 { 
+  @apply text-2xl font-bold mb-4 mt-8 text-[#1E293B] leading-snug; 
+}
+
+.markdown-body p { 
+  @apply mb-5; 
+}
+
+.markdown-body strong { 
+  @apply font-bold text-[#0F172A]; 
+}
+
+.markdown-body ul { 
+  @apply list-none pl-0 mb-6 space-y-3; 
+}
+
+.markdown-body li { 
+  @apply flex gap-3 before:content-['•'] before:text-[#3B82F6] before:font-bold; 
+}
